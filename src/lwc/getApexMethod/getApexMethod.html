@@ -1,0 +1,73 @@
+<template>
+    <lightning-card title="LWC Assignment-2" icon-name="custom:custom83">
+        <!-- <div class="slds-var-m-around_medium">
+            <template if:true={output.data}>
+                   <p>Method1 result: {output.data}</p> 
+            </template>
+            <template if:true={output.error}>
+                <c-error-panel errors={output.error}></c-error-panel>
+            </template>
+        </div>
+        <div class="slds-var-m-around_medium">
+            <template if:true={output1.data}>
+                   <p>Method2 result: {output.data}-{output1.data}</p> 
+            </template>
+            <template if:true={output1.error}>
+                <c-error-panel errors={output1.error}></c-error-panel>
+            </template>
+        </div>
+        <div class="slds-var-m-around_medium">
+            <template if:true={output2.data}>
+                   <p>Method3 result: {output.data}-{output1.data}-{output2.data}</p> 
+            </template>
+            <template if:true={output2.error}>
+                <c-error-panel errors={output2.error}></c-error-panel>
+            </template>
+        </div>
+
+        <div class="slds-var-m-around_medium">
+            <template if:true={method1}>
+                   <p>Method1(with Function) result: {method1}</p> 
+            </template>
+            <template if:true={error1}>
+                <c-error-panel errors={error1.error}></c-error-panel>
+            </template>
+        </div>
+
+        <div class="slds-var-m-around_medium">
+            <template if:true={method2}>
+                   <p>Method2(with Function) result: {method1}-{method2}</p> 
+            </template>
+            <template if:true={error2}>
+                <c-error-panel errors={error2.error}></c-error-panel>
+            </template>
+        </div>
+        
+        <div class="slds-var-m-around_medium">
+            <template if:true={method3}>
+                   <p>Method3(with Function) result: {method1}-{method2}-{method3}</p> 
+            </template>
+            <template if:true={error3}>
+                <c-error-panel errors={error3.error}></c-error-panel>
+            </template>
+        </div> -->
+
+
+
+        <div class="slds-var-m-around_medium">
+            <p>This is Promise Chain call</p>
+            <template if:true={method1}>
+               <p> Method result: {method1}</p>
+            </template>
+            <template if:true={method2}>
+                <p>Method1 result: {method1} {method2}</p>
+            </template>
+            <template if:true={method2}>
+                <p>Method1 result: {method1} {method2} {method3}</p>
+            </template>
+
+        </div>
+            
+    </lightning-card>
+    
+</template>

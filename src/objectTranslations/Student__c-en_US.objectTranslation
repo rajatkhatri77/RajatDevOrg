@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Student</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Students</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- just fun --></label>
+        <name>just_fun</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Aadhar Card Number --></label>
+        <name>Aadhar_Card_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Timming --></label>
+        <name>Batch_Timming__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch over timming --></label>
+        <name>Batch_over_timming__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <relationshipLabel><!-- Students --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+        <picklistValues>
+            <masterLabel>Agra</masterLabel>
+            <translation><!-- Agra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ahmedabad</masterLabel>
+            <translation><!-- Ahmedabad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ajmer</masterLabel>
+            <translation><!-- Ajmer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bengaluru</masterLabel>
+            <translation><!-- Bengaluru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bhopal</masterLabel>
+            <translation><!-- Bhopal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indore</masterLabel>
+            <translation><!-- Indore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jaipur</masterLabel>
+            <translation><!-- Jaipur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jodhpur</masterLabel>
+            <translation><!-- Jodhpur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kanpur</masterLabel>
+            <translation><!-- Kanpur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lucknow</masterLabel>
+            <translation><!-- Lucknow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mangaluru</masterLabel>
+            <translation><!-- Mangaluru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mumbai</masterLabel>
+            <translation><!-- Mumbai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mysuru</masterLabel>
+            <translation><!-- Mysuru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nagpur</masterLabel>
+            <translation><!-- Nagpur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pune</masterLabel>
+            <translation><!-- Pune --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajkot</masterLabel>
+            <translation><!-- Rajkot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surat</masterLabel>
+            <translation><!-- Surat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ujjain</masterLabel>
+            <translation><!-- Ujjain --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Class 12th Percentage --></label>
+        <name>Class_12th_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Working --></label>
+        <name>Current_Working__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth --></label>
+        <name>Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Registration --></label>
+        <name>Date_of_Registration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exprience --></label>
+        <name>Exprience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Installement --></label>
+        <name>Fee_Installement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduate --></label>
+        <name>Graduate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Linkedin ID --></label>
+        <name>Linkedin_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resume --></label>
+        <name>Resume__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <picklistValues>
+            <masterLabel>Gujrat</masterLabel>
+            <translation><!-- Gujrat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karnataka</masterLabel>
+            <translation><!-- Karnataka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Punjab</masterLabel>
+            <translation><!-- Punjab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajasthan</masterLabel>
+            <translation><!-- Rajasthan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>madhya pradesh</masterLabel>
+            <translation><!-- madhya pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>maharashtra</masterLabel>
+            <translation><!-- maharashtra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>uttar pradesh</masterLabel>
+            <translation><!-- uttar pradesh --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Student Contact --></label>
+        <name>Student_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Student Email --></label>
+        <name>Student_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Student reg No --></label>
+        <name>Student_reg_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teacher --></label>
+        <name>Teacher__c</name>
+        <relationshipLabel><!-- Students --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Technology familiar --></label>
+        <name>Technology_familiar__c</name>
+        <picklistValues>
+            <masterLabel>.NET</masterLabel>
+            <translation><!-- .NET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AWS</masterLabel>
+            <translation><!-- AWS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Angular</masterLabel>
+            <translation><!-- Angular --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Java</masterLabel>
+            <translation><!-- Java --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Java script</masterLabel>
+            <translation><!-- Java script --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHP</masterLabel>
+            <translation><!-- PHP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Python</masterLabel>
+            <translation><!-- Python --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>React</masterLabel>
+            <translation><!-- React --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Graguate page layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Batch Related Information --></label>
+            <section>Batch Related Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fee --></label>
+            <section>Fee</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Student Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Batch Related Information --></label>
+            <section>Batch Related Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fee --></label>
+            <section>Fee</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Student Layout2</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Batch Related Information --></label>
+            <section>Batch Related Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fee --></label>
+            <section>Fee</section>
+        </sections>
+        <sections>
+            <label><!-- iti --></label>
+            <section>iti</section>
+        </sections>
+        <sections>
+            <label><!-- xyz --></label>
+            <section>xyz</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>exprience</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Batch Related Information --></label>
+            <section>Batch Related Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Exprience --></label>
+            <section>Exprience</section>
+        </sections>
+        <sections>
+            <label><!-- Fee --></label>
+            <section>Fee</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>fresher layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Batch Related Information --></label>
+            <section>Batch Related Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fee --></label>
+            <section>Fee</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Quick Student in Group --></label>
+        <name>Action_Record</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Fresher --></label>
+        <name>Fresher</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- exprience --></label>
+        <name>exprience</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- enter the percentage in range --></errorMessage>
+        <name>age</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Custom_Detail_Page_Link --></label>
+        <name>Custom_Detail_Page_Link</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- salesforce_Link --></label>
+        <name>salesforce_Link</name>
+    </webLinks>
+</CustomObjectTranslation>

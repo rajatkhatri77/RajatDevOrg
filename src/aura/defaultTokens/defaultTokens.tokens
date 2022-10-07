@@ -1,0 +1,4 @@
+<aura:tokens extends="force:base">
+	<aura:token name="myTextColor" value="orange"/>
+    <aura:token name="myBackgroundcolor" value="blue"/>
+</aura:tokens>

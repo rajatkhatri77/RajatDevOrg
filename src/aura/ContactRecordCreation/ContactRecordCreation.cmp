@@ -1,0 +1,22 @@
+<aura:component controller = "caluclatorControler" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="ContactObj" type="Contact" default = "{'sObjectType':Contact,
+                                                                'FirstName':'',
+                                                                'LastName':'',
+                                                                'Phone':''}" />
+    <aura:attribute name="contactId" type="String" />
+    <div class="slds-p-around_small slds-p-top_small slds-p-right_small slds-p-bottom_small slds-p-left_small 
+                 slds-card">
+        <h1>Contact Record Creation</h1>
+        <div class="slds-p-top_small">
+                <lightning:input label="Enter First Name" value="{! v.ContactObj.FirstName }"/>
+        </div>
+        <div class="slds-p-top_small">
+                <lightning:input label="Enter Last number" value="{! v.ContactObj.LastName}"/>
+        </div>
+        <div class="slds-p-top_small">
+                <lightning:input label="Enter Phoen" value="{! v.ContactObj.Phone }"/>
+        </div>
+        
+    </div>
+	
+</aura:component>

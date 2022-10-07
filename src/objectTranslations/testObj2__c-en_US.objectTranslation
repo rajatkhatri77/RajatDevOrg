@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>testObj2</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>testObj2</value>
+    </caseValues>
+    <fields>
+        <label><!-- Index_Test --></label>
+        <name>Index_Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- TestPicklist --></label>
+        <name>TestPicklist__c</name>
+        <picklistValues>
+            <masterLabel>no</masterLabel>
+            <translation><!-- no --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>yes</masterLabel>
+            <translation><!-- yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Testobject --></label>
+        <name>Testobject__c</name>
+        <relationshipLabel><!-- testObj2 --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- checkbox field --></label>
+        <name>checkbox_field__c</name>
+    </fields>
+    <fields>
+        <label><!-- read only --></label>
+        <name>read_only__c</name>
+    </fields>
+    <fields>
+        <label><!-- visible --></label>
+        <name>visible__c</name>
+    </fields>
+    <nameFieldLabel>test std fields Name</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- this test --></errorMessage>
+        <name>test_if_vr</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- picklist value is blank --></errorMessage>
+        <name>test_vr</name>
+    </validationRules>
+</CustomObjectTranslation>

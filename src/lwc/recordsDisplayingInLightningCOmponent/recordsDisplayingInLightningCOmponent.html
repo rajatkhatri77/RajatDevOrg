@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Sobject Records">
+        <div class="slds-p-around_medium">
+            <lightning-input type="text" onchange={handlekeyChange} class="slds-m-bottom_small" label="Search" value={sobjName}></lightning-input>
+            <lightning-formatted-text value={currOutput}></lightning-formatted-text>
+            <template if:true={sobjects.data}>
+                <template for:each={sobjects.data} for:item="sobj">
+                    <p key={sobj.Id}>{sobj.Name}</p>
+                </template>
+            </template>
+            <template if:true={sobjects.error}>
+                {sobjects.error}
+            </template>
+        </div>
+    </lightning-card>
+     
+</template>

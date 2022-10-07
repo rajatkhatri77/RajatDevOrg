@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="P2C Example Assignment">
+        <div class="slds-var-m-around_medium">
+            <lightning-input label="percentage" type="number" min="0" max="100" value={percentage} onchange={handelPercentage}>
+
+            </lightning-input>
+            <c-progress-bar class="slds-show slds-is-relative" percentage={percentage}></c-progress-bar>
+        </div>
+    </lightning-card>
+    
+</template>

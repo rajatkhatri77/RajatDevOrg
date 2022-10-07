@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    Hello world
+    <p>Aura component</p>
+    <p>
+        <lightning:formattedRichText value="This is the text formatted"/>
+    </p>
+	
+</aura:component>

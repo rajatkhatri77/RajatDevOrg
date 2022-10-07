@@ -1,0 +1,16 @@
+@import 'c/cssLibrary';
+
+.abc{
+    background: var(--lwc-colorBackgroundInverse);
+    color: var(--lwc-colorTextIconInverseHover);
+
+}
+.pqr{
+    background: var(--c-myBackgroundcolor);
+    color: var(--c-myTextColor);
+}
+
+.lmn{
+    background: yellow;
+    color: burlywood;
+}

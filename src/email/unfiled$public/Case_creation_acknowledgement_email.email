@@ -1,0 +1,11 @@
+Dear {!Case.SuppliedName},
+
+Your case has been created and your case number is {!Case.CaseNumber}.
+We truly apologize for the dissatisfaction you may have endured and we are currently investigating the concerns you have raised. Thereupon, we shall promptly update you once the investigation has been resolved and the improvements the company shall have made regarding the issue. 
+ 
+Thank you so much for bringing the issue in our attention and for your patience in its resolution. 
+ 
+Regards,
+ 
+Support Team
+Banking Management System

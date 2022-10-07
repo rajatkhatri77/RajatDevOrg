@@ -1,0 +1,64 @@
+<!--
+  Purpose         :    Related List Component
+  Created By      :    Rajat Khatri
+  Created Date    :    07/23/2021   
+  Revision Logs   :    V_1.0 - Created                    
+-->
+
+<template>
+    <!--Display actual content/markup once init happens successfully-->
+    <template if:true={state.initDone}>
+        <lightning-card> 
+            <div class=
+                   'slds-border_top slds-border_bottom slds-border_left slds-border_right custom-border-radius'>
+                <div class='slds-page-header slds-media__large'>
+                    <h1 slot="title" class="slds-card__header-link">
+                        <lightning-icon icon-name="standard:record" size="small"
+                            class="slds-m-right_small slds-media__figure"></lightning-icon>
+                           {title}
+                    </h1>
+                </div>   
+
+                <!--Display server side errors-->
+                <template if:true={state.errorExists}>
+                    <div class=
+                   'slds-border_top slds-border_bottom slds-border_left slds-border_right custom-border-radius'>
+                        <c-error-panel errors={state.inlineMessage}></c-error-panel> 
+                </div>      
+                </template>
+
+                <template if:false={state.errorExists}>
+                    <!--When we have valid data returned from the server side-->
+                    <template if:true={state.showTable}>
+                        <div class="slds-scrollable_y slds-border_top slds-border_bottom slds-border_left slds-border_right custom-border-radius" style="height: 150px;">
+                            <lightning-datatable key-field="Id" data={state.recorddata} columns={columns} hide-checkbox-column=true>
+                            </lightning-datatable>
+                        </div>       
+                    </template>
+
+                    <!--When we have no data returned from server side -->
+                    <template if:false={state.showTable}>
+                            <p style="padding-left:30px; padding-top: 10px; padding-bottom: 10px;">{state.inlineMessage}</p>
+                    </template>
+
+                </template>
+            </div>
+        </lightning-card> 
+    </template>
+
+    <!--Markup to display when init operations is in progress-->
+    <template if:false={state.initDone}>
+        <article class="slds-card slds-card_boundary">
+            <div class="related_list_themed_border_top">
+                <lightning-card>
+                    <template for:each={items} for:item="item">
+                        <section key={item} class="slds-m-vertical_xx-small container" style= 'width: 80%; border-radius: 10%'>
+                            <div class="loading" style='background-color: #c0bcbc'></div>
+                        </section>
+                    </template>
+                </lightning-card>
+            </div>
+        </article> 
+    </template>
+    
+</template>

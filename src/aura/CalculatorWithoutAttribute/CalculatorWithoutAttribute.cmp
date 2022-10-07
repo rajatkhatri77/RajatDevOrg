@@ -1,0 +1,18 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <div class="slds-p-around_small slds-p-top_small slds-p-right_small slds-p-bottom_small slds-p-left_small 
+                 slds-card">
+        <H1>CalulatorWithoutAttribute</H1>
+            <div class="slds-p-top_small">
+                <lightning:input type="number" name="input1" label="Enter First number" aura:id = "fNum"/>
+            </div>
+            <div class="slds-p-top_small">
+                <lightning:input type="number" name="input2" label="Enter Second number" aura:id = "sNum"/>
+            </div>
+            <div class="slds-p-top_small">
+                <lightning:input type="number" name="input3" label="Result" aura:id = "result"/>
+            </div>
+            <div class="slds-p-top_small slds-align_absolute-center">
+                <lightning:button variant="brand" label="Addition" title="" onclick="{! c.handleAddition }" />
+            </div>
+    </div>	
+</aura:component>

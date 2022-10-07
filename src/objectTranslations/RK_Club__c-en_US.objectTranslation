@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RK Club</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RK Clubs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Area --></label>
+        <name>Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination State --></label>
+        <name>Destination_State__c</name>
+        <picklistValues>
+            <masterLabel>Gujrat</masterLabel>
+            <translation><!-- Gujrat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Himachal pardesh</masterLabel>
+            <translation><!-- Himachal pardesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madhya pradesh</masterLabel>
+            <translation><!-- Madhya pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Punjab</masterLabel>
+            <translation><!-- Punjab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajasthan</masterLabel>
+            <translation><!-- Rajasthan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uttar pradesh</masterLabel>
+            <translation><!-- Uttar pradesh --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mothly income --></label>
+        <name>Mothly_income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Out Of State --></label>
+        <name>Out_Of_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- vehicle --></label>
+        <name>Vichal__c</name>
+        <picklistValues>
+            <masterLabel>2 Wheel</masterLabel>
+            <translation><!-- 2 Wheel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 Wheel</masterLabel>
+            <translation><!-- 4 Wheel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- inputfield --></label>
+        <name>inputfield__c</name>
+    </fields>
+    <fields>
+        <label><!-- iti case --></label>
+        <name>iti_case__c</name>
+    </fields>
+    <fields>
+        <label><!-- updatedfield --></label>
+        <name>updatedfield__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
