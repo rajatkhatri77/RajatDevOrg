@@ -1,3 +1,0 @@
-<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
-	<c:statementComponent recId="{!v.recordId}"/>
-</aura:component>

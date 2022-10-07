@@ -1,6 +1,0 @@
-<messaging:emailTemplate subject="Your transaction entries of this month" recipientType="User" relatedToType="Contact">
-<messaging:plainTextEmailBody >
-Congratulations!
-This is your new Visualforce Email Template.
-</messaging:plainTextEmailBody>
-</messaging:emailTemplate>

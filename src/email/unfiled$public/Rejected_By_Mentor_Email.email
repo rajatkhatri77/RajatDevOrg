@@ -1,7 +1,0 @@
-Hello,{!Leave_Prototype__c.OwnerFirstName}
-
-This is to inform you that your leave was rejected by your mentor.
-{!Leave_Prototype__c.Link}
-
-Thanks 
-Have a great day!
