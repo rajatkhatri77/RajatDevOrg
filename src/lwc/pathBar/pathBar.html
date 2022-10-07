@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Path Bar">
+        <div class="slds-var-m-around_medium">
+          <lightning-card>
+            <lightning-progress-indicator current-step={stepSelector} type="path" has-error="true" variant="base">
+              <lightning-progress-step label="Step 1" value="Step 1" onclick={handleStepBlur}></lightning-progress-step>
+              <lightning-progress-step label="Step 2" value="Step 2" onclick={handleStepBlur}></lightning-progress-step>
+              <lightning-progress-step label="Step 3" value="Step 3" onclick={handleStepBlur}></lightning-progress-step>
+              <lightning-progress-step label="Step 4" value="Step 4" onclick={handleStepBlur}></lightning-progress-step>
+          </lightning-progress-indicator>
+          </lightning-card>
+          <div class="slds-var-m-around_medium">
+            <lightning-button label="Previous" class="slds-m-left_x-small" onclick={handlePrev}></lightning-button>
+            <lightning-button label="Next" class="slds-m-left_x-small" onclick={handleNext}></lightning-button>
+            <lightning-button label="Make as stage" class="slds-m-left_x-small" variant="brand" onclick={markThisAsStage}></lightning-button>
+            <template if:true={isSelectStep4}>
+              <lightning-button variant="brand" class="slds-m-left_x-small" label="Finish" onclick={handleFinish}></lightning-button>
+          </template>
+          </div>
+        </div>
+        <div class="slds-var-m-around_medium slds-box slds-box_x-small">
+            <lightning-tile title="Progress Bar Current Step" label="Progress Bar Current Step">
+              <div class="slds-p-left_medium">
+                <dl class="slds-list_horizontal slds-wrap">
+                  <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Current Step">Step:</dt>
+                  <dd class="slds-item_detail slds-truncate" title="step">{stepSelector}</dd>
+                </dl>
+              </div>
+            </lightning-tile>
+        </div>
+    </lightning-card> 
+</template>

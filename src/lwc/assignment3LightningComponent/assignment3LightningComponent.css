@@ -1,0 +1,13 @@
+H2{
+    color: var(--lwc-colorTextBrand);
+}
+.bdr{
+    border: 1px solid #ddd;
+}
+
+.exampleHolder{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}

@@ -1,0 +1,10 @@
+<messaging:emailTemplate subject="Your leave request is Approved" recipientType="User" relatedToType="Leave_Prototype__c">
+<messaging:plainTextEmailBody >
+Hello,{!relatedTo.Owner}
+
+This is to inform you that your leave {!relatedTo.Name} is Approved.
+
+Thanks
+Have a great day!
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

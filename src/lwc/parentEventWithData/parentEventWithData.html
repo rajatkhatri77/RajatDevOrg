@@ -1,0 +1,34 @@
+<template>
+    <lightning-card title="Parent EventWIth Data">
+        <template if:true={contacts.data}>
+            <lightning-layout class="slds-var-m-around_medium">
+                <lightning-layout-item>
+                    <template for:each={contacts.data} for:item="contact">
+                        <c-child-event-with-data class="slds-var-m-around_medium"
+                            key={contact.Id}
+                            contact={contact}
+                            onselectid={handleselect}>
+                        </c-child-event-with-data>
+                    </template>
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-var-m-left_medium">
+                     <template if:true={selectedcontact}>
+                        <img src={selectedcontact.Picture__c} alt="profile picture">
+                        <p>{selectedcontact.Name}</p>
+                        <p>{selectedcontact.Title}</p>
+                        <p>
+                            <lightning-formatted-phone value={selectedcontact.Phone}></lightning-formatted-phone>
+                        </p>
+                        <p>
+                            <lightning-formatted-email value={selectedcontact.Email}></lightning-formatted-email>
+                        </p>
+                    </template>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+        <template if:true={contacts.error}>
+            <c-error-panel errors={contacts.error}></c-error-panel>
+        </template>
+    </lightning-card>    
+    
+</template>

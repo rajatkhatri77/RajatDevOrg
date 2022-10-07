@@ -1,0 +1,7 @@
+<messaging:emailTemplate subject="Amount Credited To Your Account" recipientType="User" relatedToType="Transaction_Entry__c">
+<messaging:plainTextEmailBody >
+Your {!relatedto.Contact__r.Account_Number__c} is Credited by Rs. {!relatedto.Amount__c} on <apex:outputText value="{0, date, MMMM d','  yyyy}">
+    <apex:param value="{!relatedto.Transaction_Date__c}" /> 
+</apex:outputText> and Available Bal is Rs. {!relatedto.Contact__r.Available_Balance__c}.
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

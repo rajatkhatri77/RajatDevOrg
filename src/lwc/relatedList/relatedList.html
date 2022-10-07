@@ -1,0 +1,25 @@
+<!--
+  Purpose         :    Related List Component
+  Created By      :    Rajat Khatri
+  Created Date    :    07/23/2021   
+  Revision Logs   :    V_1.0 - Created                    
+-->
+
+<template>
+    <article class="slds-card slds-card_boundary">
+        <div class="related_list_themed_border_top">
+            <lightning-card>
+                <h3 slot="title" class="slds-card__header-link">
+                    <lightning-icon icon-name="standard:record" size="small"
+                        class="slds-m-right_small slds-media__figure"></lightning-icon>
+                    {title}
+                </h3>
+                <div if:true={recorddata}>
+                    <lightning-datatable key-field="Id" data={recorddata} columns={columnsfetch} hide-checkbox-column=true>
+                    </lightning-datatable>
+                </div>
+                
+            </lightning-card>
+        </div>
+    </article>
+</template>

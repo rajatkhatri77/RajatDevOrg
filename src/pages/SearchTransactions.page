@@ -1,0 +1,154 @@
+<apex:page docType="html-5.0" controller="SearchTransactionsControler">
+    <apex:form >
+        <apex:pageMessages id="showmsg"></apex:pageMessages>
+        <apex:pageBlock title="Select the Option">
+            <apex:selectList size="1" value="{!renderForBlock}">
+                <apex:selectOptions value="{!selecteBlock}"/>  
+                <apex:actionSupport event="onchange" action="{!renderAction}"/>
+            </apex:selectList>
+            
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Amount between" rendered="{!amountFlag}">
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Start Amount"/>
+                    <apex:inputText value="{!startAmount}" label="Start Amount"/>
+                    
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="End Amount"/>
+                    <apex:inputText value="{!endAmount}" label="End Amount"/>
+                </apex:pageBlockSectionItem>
+                
+                <div align="center" draggable="false" >
+                    <apex:commandButton value="Show Transaction" action="{!tranEntriesWithAmount}"/>
+                </div>
+            </apex:pageBlockSection>
+            <apex:pageBlockTable value="{!tranEntriesInAmountRange}" var="tranEntry" rendered="{!amountTableFlag}">
+                <apex:column headerValue="Contact Name" value="{!tranEntry.contactName}"/>
+                <apex:column headerValue="Account Number" value="{!tranEntry.tranAccontNo}"/>
+                <apex:column headerValue="Entry Name" value="{!tranEntry.name}"/>
+                <apex:column headerValue="Amount" value="{!tranEntry.amount}"/>
+                <apex:column headerValue="Type" value="{!tranEntry.type}"/>
+                <apex:column headerValue="Status" value="{!tranEntry.status}"/>
+                <apex:column headerValue="Date">
+                    <apex:outputText value="{0,date,MM/dd/yyyy}">
+                           <apex:param value="{!tranEntry.tranDate}" />
+                       </apex:outputText>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Date Between" rendered="{!dateFlag}">
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Start Date"/>
+                    <apex:input type="date" value="{!startD}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="End Date"/>
+                    <apex:input type="date" value="{!endD}"/>
+                </apex:pageBlockSectionItem>
+                <div align="center" draggable="false" >
+                    <apex:commandButton value="Show Transaction" action="{!tranEntriesWithDate}"/>
+                </div>
+            </apex:pageBlockSection>
+            <apex:pageBlockTable value="{!tranEntriesInBetweenDates}" var="tranEntry" rendered="{!dateTableFlag}">
+                <apex:column headerValue="Contact Name" value="{!tranEntry.contactName}"/>
+                <apex:column headerValue="Account Number" value="{!tranEntry.tranAccontNo}"/>
+                <apex:column headerValue="Entry Name" value="{!tranEntry.name}"/>
+                <apex:column headerValue="Amount" value="{!tranEntry.amount}"/>
+                <apex:column headerValue="Type" value="{!tranEntry.type}"/>
+                <apex:column headerValue="Status" value="{!tranEntry.status}"/>
+                <apex:column headerValue="Date">
+                    <apex:outputText value="{0,date,MM/dd/yyyy}">
+                           <apex:param value="{!tranEntry.tranDate}" />
+                       </apex:outputText>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        
+        <apex:pageBlock title="Entry Name" rendered="{!typeFlag}">
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Select the Type"/>
+                    <apex:selectList size="1" value="{!type}">
+                        <apex:selectOptions value="{!selectedType}"/>  
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:commandButton value="Show Transaction" action="{!transactionEntriesOfTpye}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockTable value="{!tranEntriesOfType}" var="tranEntry" rendered="{!typeTableFlag}">
+                <apex:column headerValue="Contact Name" value="{!tranEntry.contactName}"/>
+                <apex:column headerValue="Account Number" value="{!tranEntry.tranAccontNo}"/>
+                <apex:column headerValue="Entry Name" value="{!tranEntry.name}"/>
+                <apex:column headerValue="Amount" value="{!tranEntry.amount}"/>
+                <apex:column headerValue="Type" value="{!tranEntry.type}"/>
+                <apex:column headerValue="Status" value="{!tranEntry.status}"/>
+                <apex:column headerValue="Date">
+                    <apex:outputText value="{0,date,MM/dd/yyyy}">
+                           <apex:param value="{!tranEntry.tranDate}" />
+                       </apex:outputText>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        
+        <apex:pageBlock title="Status" rendered="{!statusFlag}">
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Select the Status"/>
+                    <apex:selectList size="1" value="{!status}">
+                        <apex:selectOptions value="{!selectedStatus}"/>  
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:commandButton value="Show Transaction" action="{!transactionEntriesOfStatus}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockTable value="{!tranEntriesOfStatus}" var="tranEntry" rendered="{!statusTableFlag}">
+                <apex:column headerValue="Contact Name" value="{!tranEntry.contactName}"/>
+                <apex:column headerValue="Account Number" value="{!tranEntry.tranAccontNo}"/>
+                <apex:column headerValue="Entry Name" value="{!tranEntry.name}"/>
+                <apex:column headerValue="Amount" value="{!tranEntry.amount}"/>
+                <apex:column headerValue="Type" value="{!tranEntry.type}"/>
+                <apex:column headerValue="Status" value="{!tranEntry.status}"/>
+                <apex:column headerValue="Date">
+                    <apex:outputText value="{0,date,MM/dd/yyyy}">
+                           <apex:param value="{!tranEntry.tranDate}" />
+                       </apex:outputText>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Account Number" rendered="{!accNoFlag}">
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Enter the Account Number"/>
+                    <apex:inputText value="{!accNo}" label="Account Number"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:commandButton value="Show Transaction" action="{!transactionEntriesOfAccNo}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockTable value="{!tranEntriesOfAccNo}" var="tranEntry" rendered="{!accNoTableFlag}">
+                <apex:column headerValue="Contact Name" value="{!tranEntry.contactName}"/>
+                <apex:column headerValue="Account Number" value="{!tranEntry.tranAccontNo}"/>
+                <apex:column headerValue="Entry Name" value="{!tranEntry.name}"/>
+                <apex:column headerValue="Amount" value="{!tranEntry.amount}"/>
+                <apex:column headerValue="Type" value="{!tranEntry.type}"/>
+                <apex:column headerValue="Status" value="{!tranEntry.status}"/>
+                <apex:column headerValue="Date">
+                    <apex:outputText value="{0,date,MM/dd/yyyy}">
+                           <apex:param value="{!tranEntry.tranDate}" />
+                       </apex:outputText>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+      
+    </apex:form>
+</apex:page>

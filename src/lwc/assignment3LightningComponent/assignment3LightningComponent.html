@@ -1,0 +1,60 @@
+<template>
+    <lightning-card title="Account Then Contact Then Opportunitys" class="slds-var-m-around_medium">
+        <div class="slds-var-m-around_medium">
+                <template if:true={accounts}>
+                    <H2>Accounts</H2>
+                    <lightning-datatable data={accounts} columns={columns} key-field="Id">
+                    </lightning-datatable>  
+                </template>
+<template if:true={error1}>
+                    <c-error-panel errors={error1}></c-error-panel>
+                </template>
+
+<template if:true={isLoading}>
+                    <div class="exampleHolder">
+                        <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                    </div>
+                </template>
+</div>
+
+
+
+<div class="slds-var-m-around_medium">
+
+    <template if:true={contacts}>
+                <H2>contacts</H2>
+                <lightning-datatable data={contacts} columns={columns} key-field="Id">
+                </lightning-datatable>  
+            </template>
+    <template if:true={error2}>
+                <c-error-panel errors={error2}></c-error-panel>
+            </template>
+    <template if:true={isLoading1}>
+                <div class="exampleHolder">
+                    <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                </div>
+            </template>
+</div>
+
+
+
+<div class="slds-var-m-around_medium">
+    <!-- <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner> -->
+    <template if:true={opportunities}>
+                <H2>opportunities</H2>
+                <lightning-datatable data={opportunities} columns={columns} key-field="Id">
+                </lightning-datatable>  
+            </template>
+    <template if:true={error3}>
+                <c-error-panel errors={error3}></c-error-panel>
+            </template>
+    <template if:true={isLoading2}>
+                <div class="exampleHolder">
+                    <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                </div>
+            </template>
+</div>
+
+</lightning-card>
+
+</template>

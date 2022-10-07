@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Twin Object1</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Twin Objects1</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- twinobj1 --></label>
+        <name>twinobj1</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Twin Object2 --></label>
+        <name>Twin_Object2__c</name>
+        <relationshipLabel><!-- Twin Objects1 --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- encryped --></label>
+        <name>encryped__c</name>
+    </fields>
+    <fields>
+        <label><!-- num --></label>
+        <name>num__c</name>
+    </fields>
+    <fields>
+        <label><!-- txt --></label>
+        <name>txt__c</name>
+    </fields>
+    <layouts>
+        <layout>Twin Object1 Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- record typ1 for twin obj1 --></label>
+        <name>record_typ1_for_twin_obj1</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- recordtype2 for twin obj1 --></label>
+        <name>recordtype2_for_twin_obj1</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

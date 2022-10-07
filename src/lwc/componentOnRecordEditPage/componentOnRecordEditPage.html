@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title={ComponentHeader} icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            {sobject}
+        </div>
+        
+        <div class="slds-var-p-around_xxx-small">
+            <template if:true={sobjects.data}>
+                <lightning-datatable data={sobjects.data} columns={columns} key-field="Id">
+                </lightning-datatable>
+            </template>
+            <template if:true={sobject.error}>
+                <c-error-panel error={sobject.error}></c-error-panel>
+            </template>
+        </div>
+    </lightning-card>
+</template>

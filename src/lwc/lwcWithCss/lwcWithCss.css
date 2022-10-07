@@ -1,0 +1,10 @@
+.headingClass{
+    color:yellow;
+    font-weight: bold;
+}
+
+.bodyClass{
+    border-top: 1px soid rgb(22, 6, 247);
+    background:rgb(20, 122, 0);
+    width:100%;
+}

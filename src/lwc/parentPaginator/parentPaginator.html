@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="paginator parent">
+        <div class="slds-var-m-around_medium">
+            <p>Page:{page}</p>
+            <div class="slds-var-m-around_medium">
+                <c-child-Paginator onprevious={previousHandler} onnext={nextHandler}></c-child-Paginator>
+            </div>
+        </div>
+    </lightning-card>
+    
+</template>
