@@ -2,12 +2,12 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 
 <types>
-    <members>TestObjRK__c</members>
+    <members>*</members>
     <name>CustomObject</name>
   </types>
   <types>
     
-    <members>TestObjRK__c</members>
+    <members>*</members>
     <name>CustomTab</name>
   </types>
 </Package>
